@@ -17,14 +17,14 @@ class Client:
         endpoint_root = str(endpoint_root).rstrip('/')
         return endpoint_root + self._endpoint_suffix
     
-    def chat_async(self, usr_prompt, sys_prompt = _sys_promt, endpoint_root = _endpoint_root, include_reasoning = False):
+    def chat(self, usr_prompt, sys_prompt = _sys_promt, endpoint_root = _endpoint_root, include_reasoning = False):
         """Send messages to a locally running LM Studio server and stream the response."""
         result = ""
         for response in self._chat_service.chat(usr_prompt, sys_prompt, self.build_endpoint(endpoint_root), include_reasoning):
             result += response
         return result
 
-    def stream_chat_async(self, usr_prompt, sys_prompt = _sys_promt, endpoint_root = _endpoint_root, include_reasoning = False):
+    def stream_chat(self, usr_prompt, sys_prompt = _sys_promt, endpoint_root = _endpoint_root, include_reasoning = False):
         for response in self._chat_service.chat(usr_prompt, sys_prompt, self.build_endpoint(endpoint_root), include_reasoning):
             yield response
 
