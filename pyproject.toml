@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lmstudio_client"  # ✅ Matches PyPI package name
+version = "0.1.0"
+description = "A lightweight Python client for interacting with LM Studio API."
+readme = "README.md"
+authors = [
+    { name = "Eiredynamic"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.25.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/eiredynamic/lmstudio-client-python"
+"Repository" = "https://github.com/eiredynamic/lmstudio-client-python"
+"Bug Tracker" = "https://github.com/eiredynamic/lmstudio-client-python/issues"

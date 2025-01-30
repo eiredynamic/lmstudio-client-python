@@ -1,0 +1,4 @@
+requests
+pytest
+validators
+pytest-asyncio
