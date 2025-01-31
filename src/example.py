@@ -2,7 +2,7 @@ from lmstudio_client.client import Client
 
 if __name__ == '__main__':
     client = Client()
-    response = client.chat("Is French cheese any good?", "You are a helpful assistant", "http://localhost:1234/v1/", False)
+    response = client.chat("Ask me a riddle!", "You are a helpful assistant", "http://localhost:1234/v1/", False)
     print(response)
 
     print("\n\n")

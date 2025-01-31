@@ -7,6 +7,7 @@ name = "lmstudio_client"  # ✅ Matches PyPI package name
 version = "0.1.0"
 description = "A lightweight Python client for interacting with LM Studio API."
 readme = "README.md"
+requires-python = ">=3.10"
 authors = [
     { name = "Eiredynamic"}
 ]
@@ -16,7 +17,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "requests>=2.25.1",
+    "requests>=2.32.2"
 ]
 
 [project.urls]
