@@ -42,7 +42,7 @@ def chat(self, usr_prompt, sys_prompt=_sys_prompt, endpoint_root=_endpoint_root,
     :param usr_prompt: The user input text.
     :param sys_prompt: (Optional) System prompt to guide the model.
     :param endpoint_root: (Optional) Root endpoint of the API.
-    :param include_reasoning: (Optional) Whether to include model reasoning.
+    :param include_reasoning: (Optional) Whether to include model reasoning, if the model support it.
     :return: The full response from the LLM.
     """
 ```
@@ -55,7 +55,7 @@ def stream_chat(self, usr_prompt, sys_prompt=_sys_prompt, endpoint_root=_endpoin
     :param usr_prompt: The user input text.
     :param sys_prompt: (Optional) System prompt to guide the model.
     :param endpoint_root: (Optional) Root endpoint of the API.
-    :param include_reasoning: (Optional) Whether to include model reasoning.
+    :param include_reasoning: (Optional) Whether to include model reasoning, if the model support it.
     :yield: Streamed response chunks from the LLM.
     """
 ```
